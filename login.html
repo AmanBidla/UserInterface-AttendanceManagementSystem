@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+	<script src="attendance.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+		<form class="signupformcss" "method"="put" id="signupform">
+			<h2 class="AMSheadingsignup">Attendance Management System</h2>
+			<label class="signuplabel" for="signup">Sign up</label><br><br>
+			<label class="instructorIDlabel" for="instructorID">Instructor ID:</label>
+			<input class="instructorIDinput" type="text" id="instructorID" name="InstructorID"><br><br>
+			<small class="instructorIDmessagelabel" type="text" id="instructorIDmessage" value="label"></small>
+			<label class="passwordlabel" for="password">Password:</label>
+			<input class="passwordinput" type="password" id="password" name="instructorpassword"><br><br>
+			<small class="passwordmessagelabel" type="text" id="instructorPasswordmessage" value="label"></small>
+			<label class="confirmpasswordlabel" for="confirmpassword">Confirm Password:</label>
+			<input class="confirmpasswordinput" type="password" id="confirmpassword" name="confirminstructorpassword"><br><br>
+			<small class="confirmpasswordmessagelabel" type="text" id="confirmPasswordmessage" value="label"></small>
+			<span class="signupspansubmit" id="signupsubmit" onclick="login(this.id)">Sign Up</span>
+			<span class="signinspan" id="signinspan" onclick="login(this.id)">Sign In</span>
+		</form>	
+
+		<form class="signinformcss" id="signinform" method="post" hidden>
+			<h2 class="AMSheadingsignin">Attendance Management System</h2>
+			<label class="signinlabel" for="signin">Sign In</label><br><br>
+			<label class="instructorIDloginlabel" for="instructorID">Instructor ID:</label>
+			<input class="instructorIDlogininput" type="text" id="instructorloginID" name="InstructorID"><br><br>
+			<small class="instructorIDloginmessagelabel" type="text" id="instructorIDloginmessage" value="label"></small>			
+			<label class="passwordloginlabel" for="password">Password:</label>
+			<input class="passwordlogininput" type="password" id="instructorpassword" name="instructorpassword"><br><br>
+			<small class="passwordloginmessagelabel" type="text" id="instructorPasswordloginmessage" value="label"></small>
+			<span class="signinspansubmit" id="signinsubmit" onclick="login(this.id)">Sign In</span>
+			<span class="signupspan" id="signupspan" onclick="login(this.id)">Sign Up</span>
+		</form>
+
+		
+</body>
+</html>

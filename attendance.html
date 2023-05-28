@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="attendance.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body onload="checkCookie()">
+<h2>Attendance Management System</h2>
+
+	<form method="get">
+		<label for="Details">Choose From List</label>
+			<select id="Component" name="Curriculam" onchange="location = this.value;">
+				<option value="attendance.html"></option>
+				<option value="course.html">Courses</option>
+				<option value="instructors.html">Instructors</option>
+				<option value="courseSchedule.html">Course Schedule</option>
+				<option value="courseInstructors.html">Course Instructors</option>
+				<option value="studentCourses.html">Student's Courses</option>
+				<option value="attendanceRecord.html">Attendance Record</option>>			
+			</select>
+			<button type="button" id="button" onclick="myFunction()" >Submit</button>
+	</form>
+	<br/>
+		<table id="intro"></table>
+
+
+
+
+
+</body>
+</html>

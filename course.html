@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="D:\Study\COMP-600-002 Software Architecture and Programming\Project\AttendanceManagementSystemJS\style.css">
+	<script src="attendance.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body onload="checkCookie()">
+<h2>Attendance Management System</h2>
+
+	<form method="get">
+		<label for="Details">Choose From List</label>
+			<select id="Component" name="Curriculam" onchange="location = this.value;">
+				<option value="course.html">Courses</option>
+				<option value="instructors.html">Instructors</option>
+				<option value="courseSchedule.html">Course Schedule</option>
+				<option value="courseInstructors.html">Course Instructors</option>
+				<option value="studentCourses.html">Student's Courses</option>
+				<option value="attendanceRecord.html">Attendance Record</option>>			
+			</select>
+			<button type="button" id="button" onclick="myFunction()">Submit</button>
+	</form>
+	<br/>
+		<table id="course"></table><br><br>
+		
+	<form method="get"">
+		<label for="newCourse">Add New Course</label><br><br>
+		<label for="CourseName">Course name:</label>
+		<input type="text" id="CourseName" name="CourseName">
+		<span class="submit" onclick="NewCourse()">Submit</span>		
+		<br/>
+		<table id="new"></table><br><br>
+	</form>
+
+	
+	<form method="put"">
+		<label for="updateCourse">Update Course</label><br><br>
+		<label for="CourseID">Course ID:</label>
+		<input type="text" id="UpdateCourseID" name="CourseID"><br><br>
+		<label for="CourseName">Course name:</label>
+		<input type="text" id="UpdateCourseName" name="CourseName"><br><br>
+		<span class="submit" onclick="UpdateCourse()">Submit</span>
+	</form>
+	<br/>
+		<table id="update"></table><br><br>
+		
+	<form method="get"">
+		<label for="CourseSchedule">Course Schedule</label><br><br>
+		<label for="Course">Course:</label>
+		<input type="text" id="Course" value="Enter ID or Name" onclick="ScheduleInputChange()"><br><br>
+		<span class="submit" onclick="getCourseSchedule()">Submit</span>
+	</form>
+	<br/>
+		<table id="schedule"></table><br><br>
+
+	<form method="get"">
+		<label for="CourseDeletion">Delete Course</label><br><br>
+		<label for="CourseDeletion">Course:</label>
+		<input type="text" id="DeleteCourse" value="Enter ID or Name" onclick="DeleteInputChange()"><br><br>
+		<style>
+		<span class="submit" onclick="DeleteCourse()">Submit</span><label type="text" id="DeletionMessage" value="label"></label>
+	</form>
+</body>
+</html>

@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');			
+
+span:hover {
+  background-color: lightgray;
+  box-shadow: 0 3px #666;
+  transform: translateY(1px);
+}
+
+.AMSheadingsignin{
+	position: absolute;
+	top: -60px;
+	left: 40px;
+}
+.AMSheadingsignup{
+	position: absolute;
+	top: -60px;
+	left: 40px;
+}
+.signupformcss {
+	background-color: #FFEBCD;
+	position: relative;
+	right: 50px;
+	top:70px;
+	height:250px;
+	width:420px;
+	color: black;
+	padding: 4px;
+	margin: auto;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 5px;
+}
+.signuplabel {
+	font-family: Verdana;
+	font-size: 1.2em;
+	background-color: #FFFFFF;
+	display: block;
+	width: 420px;
+	text-align: center;
+	border-radius: 5px;
+	left:20px;
+}
+.instructorIDlabel {
+	font-family: Verdana;
+	font-size: 1em;
+	position: relative;	
+	left: 38px;
+}
+.instructorIDinput{
+	position: relative;
+	left: 83px;
+	color: black;
+	padding: 4px;
+	margin: auto;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+}
+.instructorIDmessagelabel{
+	font-family: Verdana;
+	font-weight: bold;
+	font-style: italic;
+	position:absolute;
+	text-align:left;
+    bottom:	153px;
+	left: 205px;
+	text-align:center;
+}
+.passwordlabel{
+	position: absolute;
+	top: 110px;
+	left:40px;
+	font-family: Verdana;
+	font-size: 1em;	
+} 
+.passwordinput{
+	position: absolute;
+	left: 203px;
+	top: 110px;
+	color: black;
+	padding: 4px;
+	margin: auto;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+} 
+.passwordmessagelabel{
+	font-family: Verdana;
+	font-weight: bold;
+	font-style: italic;
+	position: absolute;	
+	bottom:	107px;
+	left: 195px;
+	width:100%;
+} 
+.confirmpasswordlabel{
+	font-family: Verdana;
+	font-size: 1em;
+	position: absolute;
+	left:40px;
+	text-align: left;
+	width: 100%;
+	top: 165px;
+}
+.confirmpasswordinput{
+	position: relative;
+	left: 200px;
+	color: black;
+	padding: 4px;
+	margin: auto;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+	top: 18px;	
+} 
+.confirmpasswordmessagelabel{
+	font-family: Verdana;
+	font-weight: bold;
+	font-style: italic;
+	position: absolute;
+	bottom: 56px;
+	left: 8px;
+	width: 100%;
+	text-align:center;	
+} 
+.signupspansubmit{
+	font-family: Verdana;
+	font-size: 0.8em;
+	position:absolute;
+	left:210px;	
+	background-color: #FFFFFF; 
+	color: black;
+	padding: 4px;
+	margin: auto;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+	cursor: pointer;
+	width: auto;
+    top: 210px;	
+}
+.signinspan {
+	font-family: Verdana;
+	font-size: 0.8em;
+	position:absolute;
+	left:300px;	
+	bottom: 22px;
+	background-color: #FFFFFF; 
+	color: black;
+	padding: 4px;
+	margin: auto;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;	
+	cursor: pointer;
+	width: auto;
+}
+
+.signinformcss {
+	background-color: #FFEBCD;
+	position: relative;
+	right: 50px;
+	top:70px;
+	height:200px;
+	width:420px;
+	color: black;
+	padding: 4px;
+	margin: auto;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 5px;
+}
+.signinlabel {
+	font-family: Verdana;
+	font-size: 1.2em;
+	background-color: #FFFFFF;
+	display: block;
+	width: 420px;
+	text-align: center;
+	border-radius: 5px;
+}
+.instructorIDloginlabel {
+	font-family: Verdana;
+	font-size: 1em;	
+	position: relative;	
+	left: 38px;
+}
+.instructorIDlogininput{
+	position: relative;
+	left: 83px;
+	color: black;
+	padding: 4px;
+	margin: auto;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+}
+.instructorIDloginmessagelabel{
+	font-family: Verdana;
+	font-weight: bold;
+	font-style: italic;
+	position:absolute;
+	left:205px;	
+	bottom: 105px; 
+	text-align:center;	
+}
+.passwordloginlabel{
+	font-family: Verdana;
+	font-size: 1em;
+	position: relative;
+	left: 40px;	
+} 
+.passwordlogininput{
+	position: relative;
+	left: 113px;
+	color: black;
+	padding: 4px;
+	margin: auto;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+} 
+.passwordloginmessagelabel{
+	font-family: Verdana;
+	font-weight: bold;
+	font-style: italic;
+	position:absolute;
+	left: 205px;
+    bottom: 60px; 	
+	text-align:center;
+} 
+.signinspansubmit{
+	font-family: Verdana;
+	font-size: 0.8em;
+	position:absolute;
+	left: 210px;
+	top: 155px;	
+	background-color: #FFFFFF; 
+	color: black;
+	padding: 4px;
+	margin: auto;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+	cursor: pointer;
+	width: auto;
+}
+.signupspan {
+	font-family: Verdana;
+	font-size: 0.8em;
+	position:absolute;
+	left:310px;
+	bottom: 27px;
+	background-color: #FFFFFF; 
+	color: black;
+	padding: 4px;
+	margin: auto;
+	border-style: solid;
+	border-width: 1px;
+	border-radius: 5px;
+	cursor: pointer;
+	width: auto;
+}
+
